@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import UserForm from "./form";
+import { MapContainer } from "react-leaflet";
 
 const UserDeviceDataCollector = () => {
   const [location, setLocation] = useState<any>(null);
@@ -111,7 +112,8 @@ const UserDeviceDataCollector = () => {
 
   return (
     <div>
-      <UserForm />
+            <MapContainer center={[54.6872, 25.2797]} zoom={6} style={{ height: "500px", width: "100%" }}/>
+      {/* <UserForm /> */}
     </div>
   );
 };
