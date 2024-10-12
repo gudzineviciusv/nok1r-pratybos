@@ -1,0 +1,26 @@
+@keyframes shakeBackground {
+    0%, 100% {
+      background-position: center;
+    }
+    10%, 30%, 50%, 70%, 90% {
+      background-position: calc(50% - 5px) 50%;
+    }
+    20%, 40%, 60%, 80% {
+      background-position: calc(50% + 5px) 50%;
+    }
+  }
+  
+  #HomeScreen {
+      width: 100%;
+      min-height: 100vh;
+      background-image: url('../assets/main_image_2.webp');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: black;
+  }
+  
+  #HomeScreen.shake {
+    animation: shakeBackground 0.7s infinite;
+  }
+  
