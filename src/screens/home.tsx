@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import UserForm from "./form";
 
 const UserDeviceDataCollector = () => {
   const [location, setLocation] = useState<any>(null);
@@ -110,7 +111,7 @@ const UserDeviceDataCollector = () => {
 
   return (
     <div>
-      {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
+      <UserForm />
     </div>
   );
 };
